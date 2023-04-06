@@ -1,0 +1,164 @@
+/*--------------------------------- Car Header--------------------------------- */
+/*--------------------------------- Car Header--------------------------------- */
+/*--------------------------------- Car Header--------------------------------- */
+
+
+.car_header{
+    width: 100%;
+    position: relative;
+    top: 0rem;
+    height: 600px;
+}
+
+.car_header .header_img{
+    width: 100%;
+    height: 100%;
+}
+
+.car_header .header_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.car_header .header_container {
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car_header .header_container h1{
+    color: var(--white-1);
+}
+
+.car_header h1 span{
+    color: var(--dark-red);
+}
+
+
+/*--------------------------------- Car Section--------------------------------- */
+/*--------------------------------- Car Section--------------------------------- */
+/*--------------------------------- Car Section--------------------------------- */
+
+.car_section{
+    width: 100%;
+    margin: 4rem 0rem 4rem 0rem;
+}
+
+.car_section .car_container{
+    display: grid;
+    grid-template-columns: 65% 33%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.car_container .left{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+.header_right .header_right_form {
+    background-color: var(--white-1);
+    border-radius: .5rem;
+    box-shadow: 8px 8px 10px rgba(0,0,0,.1), -8px -8px 10px rgba(0,0,0,.1);
+}
+
+
+.header_right .header_right_form select, .header_right .header_right_form input {
+    border-radius: .2rem;
+    font-size: .9rem;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+
+.header_right .header_right_form .btn_1 {
+    font-size: 1rem;
+}
+
+
+
+/* Media Query 1200PX */
+
+@media only screen and (max-width:1200px) {
+    .car_container .left {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+
+}
+
+
+/* Media Query 1024PX */
+
+@media only screen and (max-width:1024px) {
+
+    
+    .car_header {
+        width: 100%;
+        position: relative;
+        top: 0rem;
+        height: 400px;
+    }
+
+    .car_section {
+        width: 100%;
+        margin: 2rem 0rem 4rem 0rem;
+    }
+
+    .car_section .car_container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .header_right .header_right_form {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        border-radius: .5rem;
+    }
+
+    .car_container .left {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .header_right {
+        order: 1;
+    }
+
+    .car_container .left {
+        order: 2;
+    }
+
+
+
+}
+
+@media only screen and (max-width:759px) {
+
+    .car_header {
+        width: 100%;
+        position: relative;
+        height: 300px;
+    }
+}
